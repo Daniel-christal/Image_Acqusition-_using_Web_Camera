@@ -44,7 +44,7 @@ End the program and close the output video window by pressing 'q'.
 ### Register No:212223240023
 
 ## i) Write the frame as JPG file
-```
+
 import cv2
 import numpy as np
 viedoCaptureObject=cv2.VideoCapture(0)
@@ -69,7 +69,7 @@ cv2.destroyAllWindows()
 
 
 ## iii) Display the video by resizing the window
-```
+
 cap=cv2.VideoCapture(0)
 ret,frame=cap.read()
 width=int(cap.get(3))
@@ -86,12 +86,12 @@ image_dict = {'captured_image1': image}
 cv2.imwrite('captured_image1.jpg', image)
 cap.release()
 cv2.destroyAllWindows()
-```
+
 
 
 ## iv) Rotate and display the video
 
-```
+
 cap=cv2.VideoCapture(0)
 ret,frame=cap.read()
 width=int(cap.get(3))
@@ -108,7 +108,8 @@ image_dict = {'captured_image2': image}
 cv2.imwrite('captured_image2.jpg', image)
 cap.release()
 cv2.destroyAllWindows()
-```
+
+
 # Output
 
 ## i) Write the frame as JPG image
