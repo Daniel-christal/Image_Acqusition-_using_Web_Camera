@@ -52,21 +52,18 @@ ret,frame=viedoCaptureObject.read()
 cv2.imwrite("captured_frame.jpg",frame)
 viedoCaptureObject.release()
 cv2.destroyAllWindows()
-```
+
 
 
 
 ## ii) Display the video
-```
+
 cap = cv2.VideoCapture(0)
 ret, frame = cap.read()
 cv2.imshow('captured_frame', frame)
 cv2.waitKey(10000)
 cap.release()
 cv2.destroyAllWindows()
-```
-
-
 
 ## iii) Display the video by resizing the window
 
@@ -108,7 +105,7 @@ image_dict = {'captured_image2': image}
 cv2.imwrite('captured_image2.jpg', image)
 cap.release()
 cv2.destroyAllWindows()
-
+```
 
 # Output
 
